@@ -13,6 +13,9 @@ const about = {
   modalClose: document.querySelector(".modal__about__close"),
 }
 
+modalAbout(about)
+modalPortfolio(portfolio)
+
 // открыть увеличенный элемент modal about
 const modalAboutLists = document.querySelectorAll(".modal__about__list")
 
@@ -30,6 +33,7 @@ modalAboutLists.forEach(modalAboutListItem => {
       modalAboutListItemLi.removeAttribute("active")
       modalAboutListItemLi.style.width = ""
       modalAboutListItem.style.justifyContent = ""
+      modalAboutListItemLi.querySelector("img").style.height = ""
 
       modalAboutListItemsLi.forEach(listItem => listItem.style.display = "block")
     }
@@ -41,13 +45,11 @@ modalAboutLists.forEach(modalAboutListItem => {
       window.innerWidth < 830 ? modalAboutListItemLi.style.width = "100%" : modalAboutListItemLi.style.width = "50%"        
       modalAboutListItemLi.setAttribute("active", "true")
       modalAboutListItem.style.justifyContent = "center"
+      modalAboutListItemLi.querySelector("img").style.height = "auto"
     }
   })
 
 })
-
-// modalAbout
-modalAbout(about)
 
 function modalAbout(data) {
   const {listItems, modal, modalClose} = data
@@ -74,9 +76,6 @@ function modalAbout(data) {
     })
   })
 }
-
-// modalPortfolio
-modalPortfolio(portfolio)
 
 function modalPortfolio(data) {
   const {listItems, listImages, srcImages, modal, modalClose, modalImage} = data
