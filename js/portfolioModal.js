@@ -83,7 +83,7 @@ function modalPortfolio(data) {
   listItems.forEach((listItem, index) => {
     listItem.addEventListener("click", () => {
       modal.classList.add("modal-show")
-      modalImage.setAttribute("src", `img/${srcImages + "-" + listImages[index].getAttribute("data-number-img")}.avif`)
+      modalImage.setAttribute("src", `img/${srcImages + "-" + listImages[index].getAttribute("data-number-img")}.jpg`)
       document.documentElement.style.overflow = "hidden"
     })
   })
