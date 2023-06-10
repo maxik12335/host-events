@@ -85,7 +85,7 @@ section {
 }
 
 .header__img {
-  background-image: url("../img/portfolio-7.avif");
+  background-image: url("../img/portfolio-7.jpg");
   background-size: cover;
   background-position: center;
   filter: brightness(0.3);
@@ -543,7 +543,7 @@ section {
   font-size: 35px;
   /* text-transform: uppercase; */
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
   font-weight: 400;
 }
 
