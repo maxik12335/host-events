@@ -582,6 +582,7 @@ section {
   height: 32px;
   position: absolute;
   left: 20px;
+  top: 20px;
 }
 
 .call__to__action__social__media__br7 {
@@ -597,12 +598,15 @@ section {
   top: 0;
   display: none;
   align-items: center;
+  /* align-items: flex-start; */
   justify-content: center;
   background-color: #292929a8;
 }
 
 .modal-show {
   display: flex;
+  padding-top: 50px;
+  z-index: 1;
 }
 
 .modal__portfolio__box__img {
